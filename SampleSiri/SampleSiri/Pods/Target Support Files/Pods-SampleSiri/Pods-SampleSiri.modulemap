@@ -1,0 +1,6 @@
+framework module Pods_SampleSiri {
+  umbrella header "Pods-SampleSiri-umbrella.h"
+
+  export *
+  module * { export * }
+}

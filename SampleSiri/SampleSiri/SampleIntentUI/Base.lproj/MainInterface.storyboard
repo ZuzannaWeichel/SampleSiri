@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="SampleIntentUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="4PN-XC-lEE"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="103.79464285714285"/>
+        </scene>
+        <!--Whats The Time View Controller-->
+        <scene sceneID="5SZ-Ts-sP2">
+            <objects>
+                <viewController storyboardIdentifier="WhatsTheTimeViewController" id="Gnr-T7-gVX" customClass="WhatsTheTimeViewController" customModule="SampleIntentUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="u5v-lZ-z0k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zelda" translatesAutoresizingMaskIntoConstraints="NO" id="lly-Ct-L4t">
+                                <rect key="frame" x="107" y="116" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ZPx-pw-jZ5"/>
+                                    <constraint firstAttribute="height" constant="200" id="e4G-mR-WOt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65S-df-Ec5">
+                                <rect key="frame" x="186" y="68" width="42" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="j7L-UK-AbN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.51764705879999995" green="0.74117647060000003" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lly-Ct-L4t" firstAttribute="top" secondItem="65S-df-Ec5" secondAttribute="bottom" constant="24" id="3Fb-aZ-zJJ"/>
+                            <constraint firstItem="lly-Ct-L4t" firstAttribute="centerX" secondItem="u5v-lZ-z0k" secondAttribute="centerX" id="S2V-M1-46h"/>
+                            <constraint firstItem="65S-df-Ec5" firstAttribute="top" secondItem="hiv-9Z-BXB" secondAttribute="top" constant="24" id="Sox-rq-xJ7"/>
+                            <constraint firstItem="65S-df-Ec5" firstAttribute="centerX" secondItem="u5v-lZ-z0k" secondAttribute="centerX" id="pFZ-Vc-z2o"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hiv-9Z-BXB"/>
+                    </view>
+                    <connections>
+                        <outlet property="timeLabel" destination="65S-df-Ec5" id="ER5-9t-H2g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="61U-AB-2kQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-462.31884057971018" y="84.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="zelda" width="1024" height="1024"/>
+    </resources>
+</document>

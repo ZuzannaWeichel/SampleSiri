@@ -1,0 +1,31 @@
+platform :ios, '13.2'
+use_frameworks!
+
+def shared
+    pod 'Alamofire', '~> 5.0.2'
+end
+
+target 'SampleSiri' do
+    shared
+end
+
+target 'SampleTime' do
+    shared
+end
+
+target 'SampleSiriTests' do
+    shared
+    pod 'Quick', '~> 2.2.0'
+    pod 'Nimble', '~> 8.0.5'
+end
+
+target 'SampleTimeTests' do
+    shared
+    pod 'Quick', '~> 2.2.0'
+    pod 'Nimble', '~> 8.0.5'
+end
+
+target 'SampleSiriUITests' do
+    shared
+end
+    
